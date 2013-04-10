@@ -2756,10 +2756,10 @@ call s:CreateMaps('nx', 'Sexy',       'Sexy', 'cs')
 call s:CreateMaps('nx', 'Yank',       'Yank then comment', 'cy')
 call s:CreateMaps('n',  'Append',     'Append', 'cA')
 call s:CreateMaps('',   ':',          '-Sep-', '')
-call s:CreateMaps('nx', 'AlignLeft',  'Left aligned', 'cl')
+call s:CreateMaps('nx', 'AlignLeft',  'Left aligned', '/') " edited by smenzer -- was cl
 call s:CreateMaps('nx', 'AlignBoth',  'Left and right aligned', 'cb')
 call s:CreateMaps('',   ':',          '-Sep2-', '')
-call s:CreateMaps('nx', 'Uncomment',  'Uncomment', 'cu')
+call s:CreateMaps('nx', 'Uncomment',  'Uncomment', '.') " edited by smenzer -- was cu
 call s:CreateMaps('n',  'AltDelims',  'Switch Delimiters', 'ca')
 call s:CreateMaps('i',  'Insert',     'Insert Comment Here', '')
 call s:CreateMaps('',   ':',          '-Sep3-', '')
