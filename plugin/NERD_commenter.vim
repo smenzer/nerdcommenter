@@ -2434,7 +2434,8 @@ function s:LeftMostIndx(countCommentedLines, countEmptyLines, topline, bottomlin
     if leftMostIndx == 1000
         return 0
     else
-        return leftMostIndx
+        "return leftMostIndx
+        return 0 " edited by smenzer to always fully align comments left
     endif
 endfunction
 
@@ -2743,7 +2744,7 @@ function! s:CreateMaps(modes, target, desc, combo)
         " Check if the user wants the menu to be displayed.
         if g:NERDMenuMode != 0
             execute mode . menu_command
-        endif
+		endif
     endfor
 endfunction
 call s:CreateMaps('nx', 'Comment',    'Comment', 'cc')
